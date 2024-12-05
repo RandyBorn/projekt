@@ -1,0 +1,211 @@
+:root {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("./gym bilder/istockphoto-2152164282-1024x1024.jpg");
+  height: 140vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+h1::before {
+  content: "";
+  background-image: url("./dumbbell-solid.svg");
+  width: 1.8rem;
+  height: 1.5rem;
+  display: inline-block;
+}
+.F1 {
+  color: rgb(255, 8, 0);
+}
+.i1 {
+  color: rgb(177, 22, 22);
+}
+.t1 {
+  color: rgb(29, 14, 82);
+}
+header {
+  grid-area: header;
+}
+.gym {
+  color: black;
+  position: absolute;
+  top: 2.5rem;
+  left: 14.5rem;
+  font-size: 2.5rem;
+}
+
+nav {
+  margin-top: 37px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.input1 {
+  display: none;
+}
+
+.active {
+  background-color: rgba(220, 160, 140, 0.5);
+}
+nav a:hover:not(.active) {
+  background-color: #e9e9e9bd;
+}
+
+a:hover {
+  /* mouse über Nav */
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: brown;
+  text-decoration: overline white;
+  font-weight: 500;
+}
+
+nav a {
+  font-weight: 300;
+  color: black;
+  padding: 15px;
+  font-size: 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 5fr 1fr;
+  grid-template-areas:
+    "header header header"
+    "sidebar content content"
+    "footer footer footer";
+}
+
+main {
+  display: block;
+}
+
+aside {
+  grid-area: sidebar;
+}
+
+main {
+  grid-area: content;
+}
+
+fieldset {
+  margin: auto;
+  height: 40rem;
+  width: 50rem;
+  padding: 40px;
+  box-shadow: 4px 4px 3px 4px;
+  border-radius: 50px;
+}
+fieldset:hover {
+  background-color: rgba(192, 192, 192, 0.616);
+}
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+legend {
+  font-size: 3rem;
+  text-decoration: underline rgb(77, 41, 161);
+}
+.field {
+  margin-top: 50px;
+  height: 2rem;
+  width: 40rem;
+  padding: 30px;
+  padding-bottom: 30px;
+}
+
+.regis {
+  font-size: 20px;
+}
+button {
+  border: 1px black;
+  background: linear-gradient(
+    90deg,
+    rgb(87, 15, 255) 0%,
+    rgb(248, 42, 248) 100%
+  );
+  color: white;
+  width: 30rem;
+  height: 3rem;
+  margin-top: 15px;
+  margin-left: 23rem;
+  border-radius: 30px;
+}
+label {
+  color: white;
+  font-weight: 500;
+  font-size: 25px;
+}
+img {
+  height: 300px;
+  width: 350px;
+  border-radius: 30px;
+}
+img:hover {
+  border: solid 8px white;
+}
+footer {
+  background-color: rgba(128, 128, 128, 0.199);
+  grid-area: footer;
+  text-align: center;
+  padding-top: 2em;
+  font-size: 2rem;
+  font-weight: 800;
+}
+span {
+  color: red;
+}
+h2 {
+  color: azure;
+}
+
+@media (max-width: 1317px) {
+  nav a {
+    margin-top: 5rem;
+  }
+
+  img {
+    margin-top: 6rem;
+    height: 200px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 839px) {
+  nav a {
+    display: none;
+  }
+  table {
+    position: relative;
+    right: 5rem;
+  }
+  h2 {
+    font-size: 25px;
+  }
+
+  .box {
+    width: 8rem;
+    margin-top: 5rem;
+    margin-right: 4rem;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+}

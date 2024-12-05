@@ -1,0 +1,361 @@
+:root {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    hsla(213, 77%, 14%, 1) 0%,
+    hsla(202, 27%, 45%, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 200%;
+}
+
+h1::before {
+  content: "";
+  background-image: url("./dumbbell-solid.svg");
+  width: 1.8rem;
+  height: 1.5rem;
+  display: inline-block;
+}
+
+.F1 {
+  color: rgb(255, 8, 0);
+}
+.i1 {
+  color: rgb(177, 22, 22);
+}
+.t1 {
+  color: rgb(29, 14, 82);
+}
+.gym {
+  color: white;
+  position: absolute;
+  top: 2.5rem;
+  left: 14.5rem;
+  font-size: 2.5rem;
+}
+nav {
+  margin-top: 37px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.active {
+  background-color: rgba(220, 160, 140, 0.5);
+}
+nav a:hover:not(.active) {
+  background-color: #11111150;
+}
+a:hover {
+  /* mouse über Nav */
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: wheat;
+  text-decoration: overline white;
+  font-weight: 500;
+}
+
+nav a {
+  font-weight: 300;
+  color: black;
+  padding: 15px;
+  font-size: 20px;
+  text-decoration: none;
+  display: block;
+}
+
+input {
+  display: none;
+}
+.container {
+  margin-top: 15rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.para {
+  color: white;
+  padding: 20px 10px;
+  width: 40%;
+  margin-right: 10rem;
+}
+.welcome {
+  color: white;
+  margin-left: 35rem;
+  margin-top: 14rem;
+  font-size: 5rem;
+}
+.a1 {
+  font-size: 25px;
+  position: relative;
+  bottom: 4rem;
+  left: 11rem;
+  color: red;
+}
+img {
+  border-radius: 5%;
+}
+.bild {
+  border-radius: 5%;
+  margin-right: 20px;
+}
+.container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.bild2 {
+  border-radius: 5%;
+  margin-right: 20px;
+}
+.para2 {
+  color: white;
+  padding: 20px 10px;
+  width: 40%;
+  margin-left: 10rem;
+}
+.container3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 20px;
+}
+.bild3 {
+  margin-left: 10rem;
+}
+.para3 {
+  color: white;
+  padding: 115px 10px;
+}
+
+@media (max-width: 1460px) {
+  .welcome {
+    margin-left: 8rem;
+  }
+
+  .a1 {
+    margin-right: 3rem;
+  }
+}
+
+@media (max-width: 1304px) {
+  .gym {
+    position: absolute;
+    left: 80px;
+  }
+
+  .para {
+    padding-bottom: 100px;
+  }
+}
+img {
+  height: 420px;
+  width: 750px;
+}
+
+@media (max-width: 1204px) {
+  img {
+    height: 400px;
+    width: 600px;
+  }
+  .container,
+  .container2,
+  .container3 {
+    margin-right: 5rem;
+  }
+  .bild3 {
+    position: relative;
+    top: 4rem;
+  }
+}
+
+@media (max-width: 1154px) {
+  img {
+    height: 370px;
+    width: 500px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .welcome {
+    font-size: 4rem;
+  }
+  .a1 {
+    padding-left: 2rem;
+  }
+  .bild {
+    position: relative;
+    right: 28px;
+    top: 0rem;
+  }
+  p {
+    font-size: 10px;
+    margin-top: 2rem;
+  }
+  img {
+    height: 300px;
+    width: 450px;
+  }
+}
+
+@media (max-width: 1004px) {
+  .welcome {
+    font-size: 3rem;
+    position: relative;
+    left: 5rem;
+  }
+  .container {
+    margin-right: 8rem;
+  }
+  .para {
+    margin-right: 2rem;
+  }
+  .bild {
+    margin-top: 3rem;
+  }
+
+  img {
+    height: 250px;
+    width: 400px;
+  }
+  .container2 {
+    margin-right: 10rem;
+  }
+  .container3 {
+    margin-right: 10rem;
+  }
+  .bild3 {
+    margin-top: 8rem;
+  }
+}
+
+@media (max-width: 950px) {
+  nav a {
+    margin-top: 4rem;
+  }
+  img {
+    height: 200px;
+    width: 350px;
+  }
+  .bild2 {
+    margin-top: 3rem;
+  }
+  .bild3 {
+    position: relative;
+    top: 3rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .welcome {
+    font-size: 2rem;
+  }
+  .a1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .container,
+  .container2,
+  .container3 {
+    margin-right: 2rem;
+  }
+  .para3 {
+    position: relative;
+    top: 2rem;
+  }
+}
+
+@media (max-width: 730px) {
+  .container {
+    margin-right: 2rem;
+  }
+  .bild {
+    height: 200px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 682px) {
+  .para {
+    margin-right: 5rem;
+  }
+  .para2 {
+    margin-left: 2rem;
+  }
+  .bild {
+    height: 100px;
+    width: 200px;
+  }
+  .container {
+    position: relative;
+    right: 8rem;
+  }
+  .container3 {
+    position: relative;
+    right: 5rem;
+  }
+  .para3 {
+    margin-right: -6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .bild {
+    height: 50px;
+    width: 50px;
+  }
+  nav a {
+    display: none;
+  }
+  .container {
+    position: relative;
+    right: 12rem;
+  }
+  .a1 {
+    margin-left: 1rem;
+  }
+  .container3 {
+    position: relative;
+    right: 8rem;
+  }
+  .para3 {
+    margin-right: -15rem;
+  }
+  .para2 {
+    margin-right: -5rem;
+  }
+  .bild2 {
+    position: relative;
+    left: 5rem;
+  }
+
+  .box {
+    width: 10rem;
+    margin-top: 5rem;
+    margin-right: 4rem;
+  }
+  label {
+    display: block;
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 2rem;
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+}

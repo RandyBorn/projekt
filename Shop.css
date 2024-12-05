@@ -1,0 +1,243 @@
+:root {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    hsla(355, 85%, 47%, 1) 0%,
+    hsla(355, 73%, 16%, 1) 0%,
+    hsla(355, 65%, 33%, 1) 44%,
+    hsla(355, 64%, 41%, 1) 56%,
+    hsla(0, 0%, 3%, 1) 93%
+  );
+}
+
+h1::before {
+  content: "";
+  background-image: url("./dumbbell-solid.svg");
+  width: 1.8rem;
+  height: 1.5rem;
+  display: inline-block;
+}
+.F1 {
+  color: rgb(255, 8, 0);
+}
+.i1 {
+  color: rgb(177, 22, 22);
+}
+.t1 {
+  color: rgb(29, 14, 82);
+}
+
+.gym {
+  color: white;
+  position: absolute;
+  top: 2.5rem;
+  left: 14.5rem;
+  font-size: 2.5rem;
+}
+
+nav {
+  margin-top: 37px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.active {
+  background-color: rgba(220, 160, 140, 0.5);
+}
+nav a:hover:not(.active) {
+  background-color: #e9e9e9bd;
+}
+
+a:hover {
+  /* mouse über Nav */
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: wheat;
+  text-decoration: overline white;
+  font-weight: 500;
+}
+
+nav a {
+  font-weight: 300;
+  color: black;
+  padding: 15px;
+  font-size: 20px;
+  text-decoration: none;
+  display: block;
+}
+
+input {
+  display: none;
+}
+h2 {
+  font-size: 60px;
+  color: white;
+  text-align: center;
+  margin-top: 10rem;
+}
+table {
+  border-collapse: collapse;
+  margin-top: 10rem;
+  margin-left: 11rem;
+
+  width: 80%;
+  height: 30rem;
+  padding: 30px;
+  color: white;
+
+  font-size: 20px;
+}
+td {
+  text-align: center;
+}
+table,
+th,
+td {
+  border: solid 2px;
+  box-shadow: 15px 6px 5px rgb(20, 192, 106);
+  height: 3rem;
+  padding-left: 10px;
+}
+img {
+  height: 350px;
+  width: 350px;
+}
+.container {
+  margin: auto;
+  margin-top: 10rem;
+
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.img1 {
+  animation: vibrate-2 0.5s linear infinite both;
+}
+@keyframes vibrate-2 {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(2px, -2px);
+  }
+  40% {
+    transform: translate(2px, 2px);
+  }
+  60% {
+    transform: translate(-2px, 2px);
+  }
+  80% {
+    transform: translate(-2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+.img2 {
+  animation: vibrate-2 0.8s linear infinite both;
+}
+.img3 {
+  animation: vibrate-2 0.6s linear infinite both;
+}
+.img4 {
+  animation: vibrate-2 0.9s linear infinite both;
+}
+.img5 {
+  animation: vibrate-2 1s linear infinite both;
+}
+.img6 {
+  animation: vibrate-2 0.7s linear infinite both;
+}
+.img7 {
+  animation: vibrate-2 0.6s linear infinite both;
+}
+.img8 {
+  animation: vibrate-2 0.9s linear infinite both;
+}
+.img9 {
+  animation: vibrate-2 1.1s linear infinite both;
+}
+p {
+  margin-top: 22rem;
+  margin-left: -11.5rem;
+
+  color: white;
+  font-size: 33px;
+}
+
+.img1:hover {
+  animation: rotate-center 0.6s ease-in-out both;
+}
+.img2:hover {
+  animation: rotate-center 0.6s ease-in-out both;
+}
+.img3:hover {
+  animation: rotate-center 0.6s ease-in-out both;
+}
+.img4:hover {
+  animation: rotate-center 0.6s ease-in-out both;
+}
+.img5:hover {
+  animation: rotate-center 0.6s ease-in-out both;
+}
+.img6:hover {
+  animation: rotate-center 0.6s ease-in-out both;
+}
+.img7:hover {
+  animation: rotate-center 0.6s ease-in-out both;
+}
+.img8:hover {
+  animation: rotate-center 0.6s ease-in-out both;
+}
+.img9:hover {
+  animation: rotate-center 0.6s ease-in-out both;
+}
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 1303px) {
+  nav a {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 839px) {
+  nav a {
+    display: none;
+  }
+  table {
+    position: relative;
+    right: 5rem;
+  }
+  h2 {
+    font-size: 25px;
+  }
+
+  .box {
+    width: 10rem;
+    margin-top: 5rem;
+    margin-right: 4rem;
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+}
